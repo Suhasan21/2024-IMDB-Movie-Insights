@@ -1,4 +1,4 @@
-# 2024-IMDB-Movie-Insights
+
 # 🎬 IMDb 2024 Movie Insights Dashboard
 
 Welcome to the **IMDb 2024 Movie Insights Dashboard**, a comprehensive, interactive web application built using **Streamlit** that connects to a **MySQL** database and visualizes curated data from the 2024 IMDb movie dataset.
@@ -63,19 +63,115 @@ Whether you're a data enthusiast, film buff, or developer, this app offers a sea
 ## 📊 Tech Stack
 
 **Frontend / Dashboard**:  
-- [Streamlit](https://streamlit.io)  
-- [Plotly](https://plotly.com/python/)  
-- [Matplotlib](https://matplotlib.org)  
-- [Seaborn](https://seaborn.pydata.org)
+- Streamlit  
+- Plotly  
+- Matplotlib  
+- Seaborn  
 
 **Backend / Database**:  
-- [MySQL](https://www.mysql.com/)  
-- [SQLAlchemy](https://docs.sqlalchemy.org/)  
-- [pymysql](https://pymysql.readthedocs.io/)
+- MySQL  
+- SQLAlchemy  
+- pymysql  
 
 **Data Manipulation**:  
-- [Pandas](https://pandas.pydata.org)  
-- [NumPy](https://numpy.org)
+- Pandas  
+- NumPy  
 
 ---
+
+## 🔧 Setup Instructions
+
+### 1. Clone this Repository
+
+```bash
+git clone https://github.com/yourusername/imdb-2024-dashboard.git
+cd imdb-2024-dashboard
+```
+
+### 2. Create and Activate Virtual Environment (Optional)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+Or manually:
+
+```bash
+pip install streamlit pandas plotly matplotlib seaborn pymysql sqlalchemy streamlit-option-menu
+```
+
+### 4. Configure Database Credentials
+
+In `streamlit.py`, update the `get_connection()` function with your actual credentials:
+
+```python
+user = 'YOUR_USERNAME'
+password = 'YOUR_PASSWORD'
+host = 'YOUR_HOST'
+port = 'YOUR_PORT'
+database = 'YOUR_DATABASE'
+```
+
+The default table used is `imdb_2024`.
+
+### 5. Run the Dashboard
+
+```bash
+streamlit run streamlit.py
+```
+
+The app will open in your browser at `http://localhost:8501`.
+
+---
+
+## 🛠️ Project Structure
+
+```
+.
+├── streamlit.py                # Main Streamlit dashboard script
+├── imdballgenre.ipynb          # (Optional) Jupyter notebook for EDA
+├── requirements.txt            # Python dependencies
+├── README.md                   # This file
+```
+
+---
+
+## 🗃️ Database Schema
+
+The dashboard expects a table called `imdb_2024` with the following columns:
+
+| Column Name   | Data Type    | Description                          |
+|---------------|--------------|--------------------------------------|
+| `Title`       | VARCHAR       | Movie title                          |
+| `Genre`       | VARCHAR       | Primary genre                        |
+| `Rating`      | FLOAT         | IMDb rating                          |
+| `Votes`       | INT           | Number of votes                      |
+| `Duration`    | INT (minutes) | Duration of the movie in minutes     |
+
+---
+
+## 🚀 Future Improvements
+
+- 🎥 Add poster/image previews
+- 🧠 NLP-based sentiment analysis from reviews
+- 🌍 Map-based country-wise production breakdown
+- 📱 Mobile responsiveness improvements
+- ☁️ Deploy to Streamlit Cloud or Docker
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more info.
+
+---
+
+Made with ❤️ by **[Suhasan]**
 
