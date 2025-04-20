@@ -167,11 +167,6 @@ The dashboard expects a table called `imdb_2024` with the following columns:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more info.
-
----
 
 Made with ❤️ by **[Suhasan]**
 
