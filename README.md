@@ -19,7 +19,6 @@ This project is aimed at providing deep insights into movie ratings, genres, vot
 - [🛠️ Project Structure](#️-project-structure)
 - [🗃️ Database Schema](#️-database-schema)
 - [🚀 Future Improvements](#-future-improvements)
-- [📄 License](#-license)
 
 ---
 
