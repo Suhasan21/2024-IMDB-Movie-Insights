@@ -166,6 +166,10 @@ The dashboard expects a table called `imdb_2024` with the following columns:
 
 ---
 
+🙌 Acknowledgements IMDb for public movie data.
 
+Open-source contributors and libraries used in this project.
+
+📬 Contact For queries, feel free to reach out via GitHub Issues or connect with me on https://www.linkedin.com/in/suhasan-i-91734324a/
 Made with ❤️ by **[Suhasan]**
 
