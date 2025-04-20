@@ -79,10 +79,3 @@ Whether you're a data enthusiast, film buff, or developer, this app offers a sea
 
 ---
 
-## 🔧 Setup Instructions
-
-### 1. Clone this Repository
-
-```bash
-git clone https://github.com/yourusername/imdb-2024-dashboard.git
-cd imdb-2024-dashboard
